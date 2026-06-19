@@ -35,7 +35,7 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format   
 
 extra_javascript:
-  - https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js
+  - scripts/mermaid-init.js
 
 nav:
   - Home: index.md
