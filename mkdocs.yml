@@ -26,8 +26,6 @@ theme:
 
 plugins:
   - search
-  - mermaid2:
-      version: '10.9.1'
 
 markdown_extensions:
   - pymdownx.superfences:
