@@ -1,0 +1,42 @@
+site_name: Home Ops Center
+site_description: Documentation platform for infrastructure, landscaping, and automation.
+site_url: https://Natur3-Boy.github.io/home-improvement/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: slate
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+
+plugins:
+  - search
+  - mermaid2:
+      version: '10.9.1'
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mkdocs_mermaid2.fence.fence_mermaid
+
+nav:
+  - Home: index.md
+  - Water Infrastructure: water-system.md
+  - Native Landscaping: landscaping.md
