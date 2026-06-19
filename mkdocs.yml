@@ -32,10 +32,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-
-extra_javascript:
-  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+          format: !!python/name:pymdownx.superfences.fence_mermaid_format
 
 nav:
   - Home: index.md
