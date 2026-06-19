@@ -1,5 +1,7 @@
 # Home Improvement (`home-improvement`)
 
+![Build Status](https://github.com/Natur3-Boy/home-improvement/actions/workflows/deploy.yml/badge.svg)
+
 Centralized, version-controlled documentation platform for residential infrastructure engineering, automation setups, and land management. Built using Markdown, rendered via MkDocs Material, and continuously deployed using GitHub Actions.
 
 ## Quickstart (Local Development)
