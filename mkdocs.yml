@@ -34,6 +34,9 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format   
 
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js
+
 nav:
   - Home: index.md
   - Water Infrastructure: water-system.md
