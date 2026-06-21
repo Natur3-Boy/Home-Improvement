@@ -9,8 +9,8 @@ graph TD
     Main[Water Main Entry] --> TieIn{Hard Water Split} 
 
     TieIn -->|Raw Unfiltered| Trunk[3/4 inch Hard Water Trunk] 
-    Trunk --> Spigot1[North Spigot] 
-    Trunk --> Spigot2[South Spigot] 
+    Trunk --> Spigot1[East Spigot] 
+    Trunk --> Spigot2[West Spigot] 
 
     TieIn -->|Raw Domestic| PreFilter[20-Micron Sediment Filter] 
     PreFilter --> Softener[Aquasure Harmony Softener] 
@@ -30,22 +30,22 @@ gantt
     axisFormat  %H:%M
 
     section Phase 1: Prep
-    Map and Label Spigot Lines       :active, p1_1, 2026-06-19 07:00, 120m
-    Mount Softener and Pre-filter     : p1_3, after p1_1, 180m
+    Map and Label Spigot Lines       :active, p1_1, 2026-06-19 07:00, 2026-06-19 09:00
+    Mount Softener and Pre-filter     : p1_3, 2026-06-19 09:00, 2026-06-19 12:00
 
     section Phase 2: Spigots
-    Main Water Shutoff and Drain      :critical, p2_1, after p1_3, 60m
-    Run 3/4 inch Hard Water Trunk       : p2_2, after p2_1, 180m
-    Cut, Cap and Tie-in Spigots      :critical, p2_3, after p2_2, 180m
+    Main Water Shutoff and Drain      :critical, p2_1, 2026-06-19 12:00, 2026-06-19 13:00
+    Run 3/4 inch Hard Water Trunk       : p2_2, 2026-06-19 13:00, 2026-06-19 16:00
+    Cut, Cap and Tie-in Spigots      :critical, p2_3, 2026-06-19 16:00, 2026-06-19 19:00
 
     section Phase 3: Softener
-    Plumb Softener Loop and Bypass    :critical, p3_1, after p2_3, 240m
-    Connect Drain Line              : p3_2, after p3_1, 120m
-    Slow Fill and Leak Check          : p3_3, after p3_2, 60m
+    Plumb Softener Loop and Bypass    :critical, p3_1, 2026-06-19 19:00, 2026-06-19 23:00
+    Connect Drain Line              : p3_2, 2026-06-19 23:00, 2026-06-20 01:00
+    Slow Fill and Leak Check          : p3_3, 2026-06-20 01:00, 2026-06-20 02:00
 
     section Phase 4: RO Unit
-    Mount Filters and Holding Tank    : p4_1, after p3_3, 120m
-    Plumb Feed and Dedicated Faucet   : p4_3, after p4_1, 120m
+    Mount Filters and Holding Tank    : p4_1, 2026-06-20 02:00, 2026-06-20 04:00
+    Plumb Feed and Dedicated Faucet   : p4_3, 2026-06-20 04:00, 2026-06-20 06:00
 ```
 
 ## Bill of Materials (BOM) & Costs
