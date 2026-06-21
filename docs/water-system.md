@@ -52,7 +52,7 @@ gantt
 Component | Target Model | Estimated Cost | Role 
  --- | --- | --- | --- 
 Water Softener | [Fleck 5600SXT (48k Grains)](https://affordablewater.us/products/fleck-5600sxt-digital-metered-48000-grain-water-softener?currency=USD&country=US&variant=44898732474527&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=dc3275341246) | $799.00 | Whole house softening 
-RO System | iSpring RCC7AK (6-Stage) | $220.00 | Fluoride & contaminant removal 
+RO System | [iSpring RCC7AK (6-Stage)](https://a.co/d/09qO6Knd) | $220.00 | Fluoride & contaminant removal 
 Pre-Filter | 20-Micron Spun Sediment | $25.00 | Valving protection 
 PEX-B Supplies | 3/4" and 1/2" Coils + Crimp Rings | $50.00 | Hard water trunk construction 
 Tools & Valves | PEX Crimp Tool + Ball Valves | $85.00 | Isolation and installation
