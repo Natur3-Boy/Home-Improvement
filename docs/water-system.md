@@ -62,7 +62,7 @@ Tools & Valves | PEX Crimp Tool + Ball Valves | $85.00 | Isolation and installat
 ### Emergency Softener Bypass Procedure
 
 If the softener leaks or undergoes mechanical valve failure:
-1. Locate the black bypass valve assembly on the rear of the Aquasure control head.
-2. Turn both red dial arrows so they point inward toward each other (perpendicular to the pipes).
-3. The house is now running completely on unsoftened raw municipal water; the unit is safely isolated.
+     1. Locate the black bypass valve assembly on the rear of the Aquasure control head.
+     2. Turn both red dial arrows so they point inward toward each other (perpendicular to the pipes).
+     3. The house is now running completely on unsoftened raw municipal water; the unit is safely isolated.
 
