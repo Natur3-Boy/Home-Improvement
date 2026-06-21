@@ -8,12 +8,12 @@ This runbook outlines the custom whole-house treatment deployment, hard-water is
 graph TD 
     Main[Water Main Entry] --> TieIn{Hard Water Split} 
     
-    %% Hard Water Bypass Loop 
+%% Hard Water Bypass Loop 
     TieIn -->|Raw Unfiltered| Trunk[3/4" Hard Water Trunk] 
     Trunk --> Spigot1[North Spigot] 
     Trunk --> Spigot2[South Spigot] 
     
-    %% Soft Water Loop 
+%% Soft Water Loop 
     TieIn -->|Raw Domestic| PreFilter[20-Micron Sediment Filter] 
     PreFilter --> Softener[Aquasure Harmony Softener] 
     Softener --> HouseTaps[Whole House Soft Supply] 
@@ -29,25 +29,24 @@ The baseline timeline for executing the plumbing modifications and system deploy
 gantt
     title System Installation Schedule
     dateFormat  YYYY-MM-DD
-    axisFormat  %a Day %H
 
     section Phase 1: Prep
-    Map & Label Spigot Lines       :active, p1_1, 2026-06-19, 2h
-    Mount Softener & Pre-filter     : p1_3, after p1_1, 3h
+    Map & Label Spigot Lines       :active, p1_1, 2026-06-19, 0.08d
+    Mount Softener & Pre-filter     : p1_3, after p1_1, 0.125d
 
     section Phase 2: Spigots
-    Main Water Shutoff & Drain      :critical, p2_1, after p1_3, 1h
-    Run 3/4" Hard Water Trunk       : p2_2, after p2_1, 3h
-    Cut, Cap & Tie-in Spigots      :critical, p2_3, after p2_2, 3h
+    Main Water Shutoff & Drain      :critical, p2_1, after p1_3, 0.04d
+    Run 3/4" Hard Water Trunk       : p2_2, after p2_1, 0.125d
+    Cut, Cap & Tie-in Spigots      :critical, p2_3, after p2_2, 0.125d
 
     section Phase 3: Softener
-    Plumb Softener Loop & Bypass    :critical, p3_1, after p2_3, 4h
-    Connect Drain Line              : p3_2, after p3_1, 2h
-    Slow Fill & Leak Check          : p3_3, after p3_2, 1h
+    Plumb Softener Loop & Bypass    :critical, p3_1, after p2_3, 0.16d
+    Connect Drain Line              : p3_2, after p3_1, 0.08d
+    Slow Fill & Leak Check          : p3_3, after p3_2, 0.04d
 
     section Phase 4: RO Unit
-    Mount Filters & Holding Tank    : p4_1, after p3_3, 2h
-    Plumb Feed & Dedicated Faucet   : p4_3, after p4_1, 2h
+    Mount Filters & Holding Tank    : p4_1, after p3_3, 0.08d
+    Plumb Feed & Dedicated Faucet   : p4_3, after p4_1, 0.08d
 ```
 
 ## Bill of Materials (BOM) & Costs
