@@ -26,25 +26,26 @@ The baseline timeline for executing the plumbing modifications and system deploy
 ```mermaid
 gantt
     title System Installation Schedule
-    dateFormat  YYYY-MM-DD
+    dateFormat  YYYY-MM-DD HH:mm
+    axisFormat  %H:%M
 
     section Phase 1: Prep
-    Map & Label Spigot Lines       :active, p1_1, 2026-06-19, 0.08d
-    Mount Softener & Pre-filter     : p1_3, after p1_1, 0.125d
+    Map and Label Spigot Lines       :active, p1_1, 2026-06-19 07:00, 120m
+    Mount Softener and Pre-filter     : p1_3, after p1_1, 180m
 
     section Phase 2: Spigots
-    Main Water Shutoff & Drain      :critical, p2_1, after p1_3, 0.04d
-    Run 3/4" Hard Water Trunk       : p2_2, after p2_1, 0.125d
-    Cut, Cap & Tie-in Spigots      :critical, p2_3, after p2_2, 0.125d
+    Main Water Shutoff and Drain      :critical, p2_1, after p1_3, 60m
+    Run 3/4 inch Hard Water Trunk       : p2_2, after p2_1, 180m
+    Cut, Cap and Tie-in Spigots      :critical, p2_3, after p2_2, 180m
 
     section Phase 3: Softener
-    Plumb Softener Loop & Bypass    :critical, p3_1, after p2_3, 0.16d
-    Connect Drain Line              : p3_2, after p3_1, 0.08d
-    Slow Fill & Leak Check          : p3_3, after p3_2, 0.04d
+    Plumb Softener Loop and Bypass    :critical, p3_1, after p2_3, 240m
+    Connect Drain Line              : p3_2, after p3_1, 120m
+    Slow Fill and Leak Check          : p3_3, after p3_2, 60m
 
     section Phase 4: RO Unit
-    Mount Filters & Holding Tank    : p4_1, after p3_3, 0.08d
-    Plumb Feed & Dedicated Faucet   : p4_3, after p4_1, 0.08d
+    Mount Filters and Holding Tank    : p4_1, after p3_3, 120m
+    Plumb Feed and Dedicated Faucet   : p4_3, after p4_1, 120m
 ```
 
 ## Bill of Materials (BOM) & Costs
